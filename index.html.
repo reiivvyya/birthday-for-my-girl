@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday, Sayang! ♡</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #fff0f5;
+    color: #8b5369;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.card {
+    background: #fffafc;
+    width: 100%;
+    max-width: 430px;
+    padding: 30px 22px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px #f5b9d166;
+    border: 2px solid #ffe0eb;
+}
+
+.bear {
+    font-size: 85px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #e78bb2;
+    font-size: 29px;
+    margin: 15px 0;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.cake {
+    font-size: 55px;
+    margin: 15px;
+}
+
+button {
+    background: #f3a6c7;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 5px 12px #f3a6c766;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #e78bb2;
+}
+
+#letter {
+    display: none;
+    text-align: left;
+    margin-top: 25px;
+    background: #fff0f5;
+    padding: 22px;
+    border-radius: 20px;
+    line-height: 1.8;
+    font-size: 14px;
+    animation: fadeIn 1s;
+}
+
+#letter h2 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #e78bb2;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+#letter p {
+    margin-bottom: 17px;
+}
+
+#letter .ending {
+    text-align: center;
+    color: #e78bb2;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.heart {
+    position: fixed;
+    top: -30px;
+    color: #f3a6c7;
+    font-size: 20px;
+    animation: fall linear forwards;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #d895b2;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <div class="bear">🧸</div>
+
+        <h1>Happy Birthday!</h1>
+
+        <p class="subtitle">
+            to my favorite person in the whole world ♡
+        </p>
+
+        <div class="cake">🎂</div>
+
+        <p style="margin-bottom: 20px;">
+            someone special was born today...
+            and that someone is YOU! 💗
+        </p>
+
+        <button onclick="openLetter()">
+            💌 Click to Open Your Letter
+        </button>
+
+        <div id="letter">
+
+            <h2>Happy Birthday Sayanggg! ❤️</h2>
+
+            <p>
+            happy birthday sayanggg, happy birthday to my favorite person. ❤️
+            </p>
+
+            <p>
+            akhirnya hari ini hari ulang tahun kamu, orang yang paling aku sayang.
+            semoga di umur kamu yang sekarang, kamu selalu bahagia, sehat,
+            panjang umur, dan semua yang kamu inginkan bisa tercapai yaa.
+            aku berharap hari-hari kamu ke depannya bakal jauh lebih baik,
+            penuh kebahagiaan, dan selalu ada alasan buat kamu tersenyum.
+            </p>
+
+            <p>
+            makasih udah hadir di hidup aku, makasih udah jadi bagian dari
+            hari-hari aku, makasih buat semua hal kecil yang kamu lakuin.
+            aku seneng banget bisa kenal kamu dan punya kamu di hidup aku.
+            maaf ya kalau selama ini aku masih sering bikin kamu kesel,
+            masih banyak kurangnya, atau belum bisa jadi pacar yang kamu
+            harapin. aku bakal terus belajar buat jadi lebih baik buat kamu.
+            </p>
+
+            <p>
+            i hope you know how special you are to me. jangan pernah ngerasa
+            kamu sendirian ya sayang, aku selalu berharap kamu bisa bahagia
+            dan ngerasa dicintai. semoga hubungan kita bisa terus berjalan
+            dengan baik, bisa saling ngerti, saling jaga, dan nggak gampang
+            nyerah satu sama lain.
+            </p>
+
+            <p>
+            maaf ya sayang, aku belum bisa ngasih apa-apa buat kamu di hari
+            spesial kamu ini. maaf belum bisa bikin hari ini jadi lebih
+            istimewa dengan sesuatu yang bisa kamu pegang. tapi tunggu
+            nanti yaa, aku pengen bisa ngasih sesuatu buat kamu, walaupun
+            sederhana, semoga bisa bikin kamu seneng. jangan sedih yaa,
+            yang penting kamu tahu kalau aku sayang banget sama kamu.
+            i hope someday i can give you more than just words. ❤️
+            </p>
+
+            <p>
+            once again, happy birthday my love. i love you so much,
+            more than words can say. semoga aku masih bisa ngerayain
+            banyak ulang tahun kamu ke depannya. stay happy, stay healthy,
+            and always be my favorite girl. love youuu. 💗
+            </p>
+
+            <p class="ending">
+                I LOVE YOUUU 💗<br>
+                FOREVER YOURS ♡
+            </p>
+
+        </div>
+
+        <div class="footer">
+            made with love, just for you ♡
+        </div>
+
+    </div>
+</div>
+
+<script>
+function openLetter() {
+    const letter = document.getElementById("letter");
+
+    letter.style.display = "block";
+
+    document.querySelector("button").innerText =
+        "💗 Your Letter Is Open!";
+
+    document.querySelector("button").disabled = true;
+
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+
+    for (let i = 0; i < 30; i++) {
+        setTimeout(createHeart, i * 100);
+    }
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+
+    heart.innerHTML = ["💗", "💕", "♡", "🎀", "💖"][
+        Math.floor(Math.random() * 5)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration =
+        (Math.random() * 3 + 3) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 6000);
+}
+</script>
+
+</body>
+</html>
